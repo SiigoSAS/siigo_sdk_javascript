@@ -295,13 +295,3 @@ src/model/VouchersViewModel.js
 src/model/Warehouse.js
 src/model/WarehouseModel.js
 src/model/WarehouseViewModel.js
-test/api/AccountGroupApi.spec.js
-test/api/PaymentTypeApi.spec.js
-test/api/PriceApi.spec.js
-test/api/UserApi.spec.js
-test/model/CreateProductCommand.spec.js
-test/model/CreateProductCountryCommand.spec.js
-test/model/InvoiceDeleteViewModel.spec.js
-test/model/KeysProductsViewModel.spec.js
-test/model/PaymentTypeViewModel.spec.js
-test/model/UpdateProductCommand.spec.js
