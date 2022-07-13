@@ -130,8 +130,8 @@ docs/SendInvoiceByEmailCommand.md
 docs/StampCommand.md
 docs/StampViewModel.md
 docs/Tax.md
+docs/TaxApi.md
 docs/TaxViewModel.md
-docs/TaxesApi.md
 docs/TaxesCommand.md
 docs/TaxesModel.md
 docs/UnitProductsViewModel.md
@@ -161,7 +161,7 @@ src/api/JournalEntryApi.js
 src/api/PaymentTypeApi.js
 src/api/PriceApi.js
 src/api/ProductApi.js
-src/api/TaxesApi.js
+src/api/TaxApi.js
 src/api/UserApi.js
 src/api/VoucherApi.js
 src/api/WarehousesApi.js
@@ -295,13 +295,4 @@ src/model/VouchersViewModel.js
 src/model/Warehouse.js
 src/model/WarehouseModel.js
 src/model/WarehouseViewModel.js
-test/api/AccountGroupApi.spec.js
-test/api/PaymentTypeApi.spec.js
-test/api/PriceApi.spec.js
-test/api/UserApi.spec.js
-test/model/CreateProductCommand.spec.js
-test/model/CreateProductCountryCommand.spec.js
-test/model/InvoiceDeleteViewModel.spec.js
-test/model/KeysProductsViewModel.spec.js
-test/model/PaymentTypeViewModel.spec.js
-test/model/UpdateProductCommand.spec.js
+test/api/TaxApi.spec.js

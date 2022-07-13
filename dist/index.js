@@ -779,16 +779,16 @@ Object.defineProperty(exports, "Tax", {
     return _Tax["default"];
   }
 });
+Object.defineProperty(exports, "TaxApi", {
+  enumerable: true,
+  get: function get() {
+    return _TaxApi["default"];
+  }
+});
 Object.defineProperty(exports, "TaxViewModel", {
   enumerable: true,
   get: function get() {
     return _TaxViewModel["default"];
-  }
-});
-Object.defineProperty(exports, "TaxesApi", {
-  enumerable: true,
-  get: function get() {
-    return _TaxesApi["default"];
   }
 });
 Object.defineProperty(exports, "TaxesCommand", {
@@ -1164,7 +1164,7 @@ var _PriceApi = _interopRequireDefault(require("./api/PriceApi"));
 
 var _ProductApi = _interopRequireDefault(require("./api/ProductApi"));
 
-var _TaxesApi = _interopRequireDefault(require("./api/TaxesApi"));
+var _TaxApi = _interopRequireDefault(require("./api/TaxApi"));
 
 var _UserApi = _interopRequireDefault(require("./api/UserApi"));
 
