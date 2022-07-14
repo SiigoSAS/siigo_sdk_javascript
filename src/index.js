@@ -153,7 +153,7 @@ import JournalEntryApi from './api/JournalEntryApi';
 import PaymentTypeApi from './api/PaymentTypeApi';
 import PriceApi from './api/PriceApi';
 import ProductApi from './api/ProductApi';
-import TaxesApi from './api/TaxesApi';
+import TaxApi from './api/TaxApi';
 import UserApi from './api/UserApi';
 import VoucherApi from './api/VoucherApi';
 import WarehousesApi from './api/WarehousesApi';
@@ -1061,10 +1061,10 @@ export {
     ProductApi,
 
     /**
-    * The TaxesApi service constructor.
-    * @property {module:api/TaxesApi}
+    * The TaxApi service constructor.
+    * @property {module:api/TaxApi}
     */
-    TaxesApi,
+    TaxApi,
 
     /**
     * The UserApi service constructor.
