@@ -101,6 +101,9 @@ class CreateProductCommand {
             if (data.hasOwnProperty('additional_fields')) {
                 obj['additional_fields'] = AdditionalFieldsProducts.constructFromObject(data['additional_fields']);
             }
+            if (data.hasOwnProperty('key')) {
+                obj['key'] = ApiClient.convertToType(data['key'], 'String');
+            }
         }
         return obj;
     }
@@ -181,7 +184,7 @@ CreateProductCommand.prototype['taxes'] = undefined;
 CreateProductCommand.prototype['prices'] = undefined;
 
 /**
- * Represents the id of an unit of measurement, by default this field will be 94.
+ * Represents the id of an unit of measurement, by default this field will be 94 only in Colombia
  * @member {String} unit
  */
 CreateProductCommand.prototype['unit'] = undefined;
@@ -208,6 +211,12 @@ CreateProductCommand.prototype['description'] = undefined;
  * @member {module:model/AdditionalFieldsProducts} additional_fields
  */
 CreateProductCommand.prototype['additional_fields'] = undefined;
+
+/**
+ * Represents the key of the product, mandatory only in Mexico
+ * @member {String} key
+ */
+CreateProductCommand.prototype['key'] = undefined;
 
 
 
