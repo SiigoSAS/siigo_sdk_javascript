@@ -13,8 +13,6 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateProductCommand = _interopRequireDefault(require("../model/CreateProductCommand"));
-
 var _CreateProductCountryCommand = _interopRequireDefault(require("../model/CreateProductCountryCommand"));
 
 var _ProductDeleteViewModel = _interopRequireDefault(require("../model/ProductDeleteViewModel"));
@@ -58,7 +56,7 @@ var ProductApi = /*#__PURE__*/function () {
   /**
    * Creates a product.
    * @param {Object} opts Optional parameters
-   * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+   * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
    */
 
@@ -81,7 +79,7 @@ var ProductApi = /*#__PURE__*/function () {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
      */
 

@@ -13,7 +13,6 @@
 
 
 import ApiClient from "../ApiClient";
-import CreateProductCommand from '../model/CreateProductCommand';
 import CreateProductCountryCommand from '../model/CreateProductCountryCommand';
 import ProductDeleteViewModel from '../model/ProductDeleteViewModel';
 import ProductModel from '../model/ProductModel';
@@ -43,7 +42,7 @@ export default class ProductApi {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
      */
     createProductWithHttpInfo(opts) {
@@ -73,7 +72,7 @@ export default class ProductApi {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
      */
     createProduct(opts) {
