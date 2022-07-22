@@ -143,12 +143,6 @@ Object.defineProperty(exports, "CreateJournalEntryCommand", {
     return _CreateJournalEntryCommand["default"];
   }
 });
-Object.defineProperty(exports, "CreateProductCommand", {
-  enumerable: true,
-  get: function get() {
-    return _CreateProductCommand["default"];
-  }
-});
 Object.defineProperty(exports, "CreateProductCountryCommand", {
   enumerable: true,
   get: function get() {
@@ -779,16 +773,16 @@ Object.defineProperty(exports, "Tax", {
     return _Tax["default"];
   }
 });
+Object.defineProperty(exports, "TaxApi", {
+  enumerable: true,
+  get: function get() {
+    return _TaxApi["default"];
+  }
+});
 Object.defineProperty(exports, "TaxViewModel", {
   enumerable: true,
   get: function get() {
     return _TaxViewModel["default"];
-  }
-});
-Object.defineProperty(exports, "TaxesApi", {
-  enumerable: true,
-  get: function get() {
-    return _TaxesApi["default"];
   }
 });
 Object.defineProperty(exports, "TaxesCommand", {
@@ -923,8 +917,6 @@ var _CreateCustomerCommand = _interopRequireDefault(require("./model/CreateCusto
 var _CreateInvoiceCommand = _interopRequireDefault(require("./model/CreateInvoiceCommand"));
 
 var _CreateJournalEntryCommand = _interopRequireDefault(require("./model/CreateJournalEntryCommand"));
-
-var _CreateProductCommand = _interopRequireDefault(require("./model/CreateProductCommand"));
 
 var _CreateProductCountryCommand = _interopRequireDefault(require("./model/CreateProductCountryCommand"));
 
@@ -1164,7 +1156,7 @@ var _PriceApi = _interopRequireDefault(require("./api/PriceApi"));
 
 var _ProductApi = _interopRequireDefault(require("./api/ProductApi"));
 
-var _TaxesApi = _interopRequireDefault(require("./api/TaxesApi"));
+var _TaxApi = _interopRequireDefault(require("./api/TaxApi"));
 
 var _UserApi = _interopRequireDefault(require("./api/UserApi"));
 
