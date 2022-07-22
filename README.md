@@ -128,7 +128,7 @@ Class | Method | HTTP request | Description
 *SiigoApi.ProductApi* | [**getProduct**](docs/ProductApi.md#getProduct) | **GET** /v1/products/{id} | Gets the product by GUID.
 *SiigoApi.ProductApi* | [**getProducts**](docs/ProductApi.md#getProducts) | **GET** /v1/products | Returns a paginated list of products.
 *SiigoApi.ProductApi* | [**updateProduct**](docs/ProductApi.md#updateProduct) | **PUT** /v1/products/{id} | Updates the product by GUID.
-*SiigoApi.TaxesApi* | [**getTaxes**](docs/TaxesApi.md#getTaxes) | **GET** /v1/taxes | Returns a list of taxes.
+*SiigoApi.TaxApi* | [**getTaxes**](docs/TaxApi.md#getTaxes) | **GET** /v1/taxes | Returns a list of taxes.
 *SiigoApi.UserApi* | [**getUsers**](docs/UserApi.md#getUsers) | **GET** /v1/users | Returns a paginated list of users.
 *SiigoApi.VoucherApi* | [**createVoucher**](docs/VoucherApi.md#createVoucher) | **POST** /v1/vouchers | Creates a voucher.
 *SiigoApi.VoucherApi* | [**getVoucher**](docs/VoucherApi.md#getVoucher) | **GET** /v1/vouchers/{id} | Gets the voucher by GUID.
@@ -158,7 +158,6 @@ Class | Method | HTTP request | Description
  - [SiigoApi.CreateCustomerCommand](docs/CreateCustomerCommand.md)
  - [SiigoApi.CreateInvoiceCommand](docs/CreateInvoiceCommand.md)
  - [SiigoApi.CreateJournalEntryCommand](docs/CreateJournalEntryCommand.md)
- - [SiigoApi.CreateProductCommand](docs/CreateProductCommand.md)
  - [SiigoApi.CreateProductCountryCommand](docs/CreateProductCountryCommand.md)
  - [SiigoApi.CreateVoucherCommand](docs/CreateVoucherCommand.md)
  - [SiigoApi.CreditNotePdfViewModel](docs/CreditNotePdfViewModel.md)
