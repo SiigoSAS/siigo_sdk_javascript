@@ -33,7 +33,6 @@ import CreateCreditNoteCommand from './model/CreateCreditNoteCommand';
 import CreateCustomerCommand from './model/CreateCustomerCommand';
 import CreateInvoiceCommand from './model/CreateInvoiceCommand';
 import CreateJournalEntryCommand from './model/CreateJournalEntryCommand';
-import CreateProductCommand from './model/CreateProductCommand';
 import CreateProductCountryCommand from './model/CreateProductCountryCommand';
 import CreateVoucherCommand from './model/CreateVoucherCommand';
 import CreditNotePdfViewModel from './model/CreditNotePdfViewModel';
@@ -153,7 +152,7 @@ import JournalEntryApi from './api/JournalEntryApi';
 import PaymentTypeApi from './api/PaymentTypeApi';
 import PriceApi from './api/PriceApi';
 import ProductApi from './api/ProductApi';
-import TaxesApi from './api/TaxesApi';
+import TaxApi from './api/TaxApi';
 import UserApi from './api/UserApi';
 import VoucherApi from './api/VoucherApi';
 import WarehousesApi from './api/WarehousesApi';
@@ -339,12 +338,6 @@ export {
      * @property {module:model/CreateJournalEntryCommand}
      */
     CreateJournalEntryCommand,
-
-    /**
-     * The CreateProductCommand model constructor.
-     * @property {module:model/CreateProductCommand}
-     */
-    CreateProductCommand,
 
     /**
      * The CreateProductCountryCommand model constructor.
@@ -1061,10 +1054,10 @@ export {
     ProductApi,
 
     /**
-    * The TaxesApi service constructor.
-    * @property {module:api/TaxesApi}
+    * The TaxApi service constructor.
+    * @property {module:api/TaxApi}
     */
-    TaxesApi,
+    TaxApi,
 
     /**
     * The UserApi service constructor.
