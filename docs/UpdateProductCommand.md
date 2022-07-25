@@ -16,10 +16,11 @@ Name | Type | Description | Notes
 **taxConsumptionValue** | **Number** | Represents value of consumption tax. | [optional] 
 **taxes** | [**[ProductTaxesCommand]**](ProductTaxesCommand.md) | Contains a list with ids of taxes associated to item. | [optional] 
 **prices** | [**[PricesProducts]**](PricesProducts.md) | Contains a list with &#39;prices list&#39; of product. Every product can have up to 12 price list. | [optional] 
-**unit** | **String** | Represents the id of an unit of measurement, by default this field will be 94. | [optional] 
+**unit** | **String** | Represents the id of an unit of measurement, by default this field will be 94 only in Colombia | [optional] 
 **unitLabel** | **String** | Represents Unit of measure for invoice printing. | [optional] 
 **reference** | **String** | Represents the Reference or factory code of the product or service. | [optional] 
 **description** | **String** | Represents product description. | [optional] 
 **additionalFields** | [**AdditionalFieldsProducts**](AdditionalFieldsProducts.md) |  | [optional] 
+**key** | **String** | Represents the key of the product, mandatory only in Mexico | [optional] 
 
 
