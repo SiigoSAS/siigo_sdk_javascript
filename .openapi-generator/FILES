@@ -24,7 +24,6 @@ docs/CreateCreditNoteCommand.md
 docs/CreateCustomerCommand.md
 docs/CreateInvoiceCommand.md
 docs/CreateJournalEntryCommand.md
-docs/CreateProductCommand.md
 docs/CreateProductCountryCommand.md
 docs/CreateVoucherCommand.md
 docs/CreditNoteApi.md
@@ -63,6 +62,7 @@ docs/FixedAssetCommand.md
 docs/FixedAssetModel.md
 docs/FixedAssetsApi.md
 docs/FixedAssetsViewModel.md
+docs/GenericPageListModel.md
 docs/GlobalTaxCommand.md
 docs/GlobalTaxModel.md
 docs/IdTypeModel.md
@@ -100,7 +100,6 @@ docs/MailCommand.md
 docs/MailViewModel.md
 docs/Metadata.md
 docs/MetadataModel.md
-docs/PageListDto.md
 docs/PageListModel.md
 docs/Payment.md
 docs/PaymentTypeApi.md
@@ -118,8 +117,8 @@ docs/PricesProducts.md
 docs/ProductApi.md
 docs/ProductDeleteViewModel.md
 docs/ProductModel.md
+docs/ProductModelGetAllModel.md
 docs/ProductTaxesCommand.md
-docs/ProductsViewModel.md
 docs/PurchaseOrderCommand.md
 docs/PursacheOrderModel.md
 docs/RelatedUsersCommand.md
@@ -130,8 +129,8 @@ docs/SendInvoiceByEmailCommand.md
 docs/StampCommand.md
 docs/StampViewModel.md
 docs/Tax.md
+docs/TaxApi.md
 docs/TaxViewModel.md
-docs/TaxesApi.md
 docs/TaxesCommand.md
 docs/TaxesModel.md
 docs/UnitProductsViewModel.md
@@ -161,7 +160,7 @@ src/api/JournalEntryApi.js
 src/api/PaymentTypeApi.js
 src/api/PriceApi.js
 src/api/ProductApi.js
-src/api/TaxesApi.js
+src/api/TaxApi.js
 src/api/UserApi.js
 src/api/VoucherApi.js
 src/api/WarehousesApi.js
@@ -186,7 +185,6 @@ src/model/CreateCreditNoteCommand.js
 src/model/CreateCustomerCommand.js
 src/model/CreateInvoiceCommand.js
 src/model/CreateJournalEntryCommand.js
-src/model/CreateProductCommand.js
 src/model/CreateProductCountryCommand.js
 src/model/CreateVoucherCommand.js
 src/model/CreditNotePdfViewModel.js
@@ -221,6 +219,7 @@ src/model/FiscalResponsibilitiesCommand.js
 src/model/FixedAssetCommand.js
 src/model/FixedAssetModel.js
 src/model/FixedAssetsViewModel.js
+src/model/GenericPageListModel.js
 src/model/GlobalTaxCommand.js
 src/model/GlobalTaxModel.js
 src/model/IdTypeModel.js
@@ -256,7 +255,6 @@ src/model/MailCommand.js
 src/model/MailViewModel.js
 src/model/Metadata.js
 src/model/MetadataModel.js
-src/model/PageListDto.js
 src/model/PageListModel.js
 src/model/Payment.js
 src/model/PaymentTypeViewModel.js
@@ -271,8 +269,8 @@ src/model/PricesListProducts.js
 src/model/PricesProducts.js
 src/model/ProductDeleteViewModel.js
 src/model/ProductModel.js
+src/model/ProductModelGetAllModel.js
 src/model/ProductTaxesCommand.js
-src/model/ProductsViewModel.js
 src/model/PurchaseOrderCommand.js
 src/model/PursacheOrderModel.js
 src/model/RelatedUsersCommand.js
@@ -295,13 +293,6 @@ src/model/VouchersViewModel.js
 src/model/Warehouse.js
 src/model/WarehouseModel.js
 src/model/WarehouseViewModel.js
-test/api/AccountGroupApi.spec.js
-test/api/PaymentTypeApi.spec.js
-test/api/PriceApi.spec.js
-test/api/UserApi.spec.js
-test/model/CreateProductCommand.spec.js
-test/model/CreateProductCountryCommand.spec.js
-test/model/InvoiceDeleteViewModel.spec.js
-test/model/KeysProductsViewModel.spec.js
-test/model/PaymentTypeViewModel.spec.js
-test/model/UpdateProductCommand.spec.js
+test/api/TaxApi.spec.js
+test/model/GenericPageListModel.spec.js
+test/model/ProductModelGetAllModel.spec.js

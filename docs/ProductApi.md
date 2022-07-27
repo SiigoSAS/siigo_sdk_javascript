@@ -27,7 +27,7 @@ import * as SiigoApi from 'siigo_api';
 
 let apiInstance = new SiigoApi.ProductApi();
 
-let opts = new SiigoApi.CreateProductCommand(); // CreateProductCommand | Represents the request with the product information.
+let opts = new SiigoApi.CreateProductCountryCommand(); // CreateProductCountryCommand | Represents the request with the product information.
 
 apiInstance.createProduct(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -43,7 +43,7 @@ import * as SiigoApi from 'siigo_api';
 async function main(){
   try {
     let apiInstance = new SiigoApi.ProductApi();
-    let opts = new SiigoApi.CreateProductCommand(); // CreateProductCommand | Represents the request with the product information.
+    let opts = new SiigoApi.CreateProductCountryCommand(); // CreateProductCountryCommand | Represents the request with the product information.
 
     const data = await apiInstance.createProduct(opts);
     console.log('API called successfully. Returned data: ' + data);
@@ -59,7 +59,7 @@ async function main(){
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **createProductCommand** | [**CreateProductCommand**](CreateProductCommand.md)| Represents the request with the product information. | [optional] 
+ **createProductCountryCommand** | [**CreateProductCountryCommand**](CreateProductCountryCommand.md)| Represents the request with the product information. | [optional] 
 
 ### Return type
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 
 ## getProducts
 
-> ProductsViewModel getProducts(opts)
+> ProductModelGetAllModel getProducts(opts)
 
 Returns a paginated list of products.
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ProductsViewModel**](ProductsViewModel.md)
+[**ProductModelGetAllModel**](ProductModelGetAllModel.md)
 
 ### Authorization
 

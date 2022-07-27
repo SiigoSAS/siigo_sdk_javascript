@@ -13,11 +13,10 @@
 
 
 import ApiClient from "../ApiClient";
-import CreateProductCommand from '../model/CreateProductCommand';
 import CreateProductCountryCommand from '../model/CreateProductCountryCommand';
 import ProductDeleteViewModel from '../model/ProductDeleteViewModel';
 import ProductModel from '../model/ProductModel';
-import ProductsViewModel from '../model/ProductsViewModel';
+import ProductModelGetAllModel from '../model/ProductModelGetAllModel';
 import UpdateProductCommand from '../model/UpdateProductCommand';
 
 /**
@@ -43,7 +42,7 @@ export default class ProductApi {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
      */
     createProductWithHttpInfo(opts) {
@@ -73,7 +72,7 @@ export default class ProductApi {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
      */
     createProduct(opts) {
@@ -235,7 +234,7 @@ export default class ProductApi {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsViewModel} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModelGetAllModel} and HTTP response
      */
     getProductsWithHttpInfo(opts) {
       opts = opts || {};
@@ -267,7 +266,7 @@ export default class ProductApi {
       let authNames = ['Bearer'];
       let contentTypes = [];
       let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductsViewModel;
+      let returnType = ProductModelGetAllModel;
       return this.apiClient.callApi(
         '/v1/products', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -292,7 +291,7 @@ export default class ProductApi {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsViewModel}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModelGetAllModel}
      */
     getProducts(opts) {
       return this.getProductsWithHttpInfo(opts)
