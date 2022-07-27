@@ -143,12 +143,6 @@ Object.defineProperty(exports, "CreateJournalEntryCommand", {
     return _CreateJournalEntryCommand["default"];
   }
 });
-Object.defineProperty(exports, "CreateProductCommand", {
-  enumerable: true,
-  get: function get() {
-    return _CreateProductCommand["default"];
-  }
-});
 Object.defineProperty(exports, "CreateProductCountryCommand", {
   enumerable: true,
   get: function get() {
@@ -377,6 +371,12 @@ Object.defineProperty(exports, "FixedAssetsViewModel", {
     return _FixedAssetsViewModel["default"];
   }
 });
+Object.defineProperty(exports, "GenericPageListModel", {
+  enumerable: true,
+  get: function get() {
+    return _GenericPageListModel["default"];
+  }
+});
 Object.defineProperty(exports, "GlobalTaxCommand", {
   enumerable: true,
   get: function get() {
@@ -599,12 +599,6 @@ Object.defineProperty(exports, "MetadataModel", {
     return _MetadataModel["default"];
   }
 });
-Object.defineProperty(exports, "PageListDto", {
-  enumerable: true,
-  get: function get() {
-    return _PageListDto["default"];
-  }
-});
 Object.defineProperty(exports, "PageListModel", {
   enumerable: true,
   get: function get() {
@@ -707,16 +701,16 @@ Object.defineProperty(exports, "ProductModel", {
     return _ProductModel["default"];
   }
 });
+Object.defineProperty(exports, "ProductModelGetAllModel", {
+  enumerable: true,
+  get: function get() {
+    return _ProductModelGetAllModel["default"];
+  }
+});
 Object.defineProperty(exports, "ProductTaxesCommand", {
   enumerable: true,
   get: function get() {
     return _ProductTaxesCommand["default"];
-  }
-});
-Object.defineProperty(exports, "ProductsViewModel", {
-  enumerable: true,
-  get: function get() {
-    return _ProductsViewModel["default"];
   }
 });
 Object.defineProperty(exports, "PurchaseOrderCommand", {
@@ -779,16 +773,16 @@ Object.defineProperty(exports, "Tax", {
     return _Tax["default"];
   }
 });
+Object.defineProperty(exports, "TaxApi", {
+  enumerable: true,
+  get: function get() {
+    return _TaxApi["default"];
+  }
+});
 Object.defineProperty(exports, "TaxViewModel", {
   enumerable: true,
   get: function get() {
     return _TaxViewModel["default"];
-  }
-});
-Object.defineProperty(exports, "TaxesApi", {
-  enumerable: true,
-  get: function get() {
-    return _TaxesApi["default"];
   }
 });
 Object.defineProperty(exports, "TaxesCommand", {
@@ -924,8 +918,6 @@ var _CreateInvoiceCommand = _interopRequireDefault(require("./model/CreateInvoic
 
 var _CreateJournalEntryCommand = _interopRequireDefault(require("./model/CreateJournalEntryCommand"));
 
-var _CreateProductCommand = _interopRequireDefault(require("./model/CreateProductCommand"));
-
 var _CreateProductCountryCommand = _interopRequireDefault(require("./model/CreateProductCountryCommand"));
 
 var _CreateVoucherCommand = _interopRequireDefault(require("./model/CreateVoucherCommand"));
@@ -993,6 +985,8 @@ var _FixedAssetCommand = _interopRequireDefault(require("./model/FixedAssetComma
 var _FixedAssetModel = _interopRequireDefault(require("./model/FixedAssetModel"));
 
 var _FixedAssetsViewModel = _interopRequireDefault(require("./model/FixedAssetsViewModel"));
+
+var _GenericPageListModel = _interopRequireDefault(require("./model/GenericPageListModel"));
 
 var _GlobalTaxCommand = _interopRequireDefault(require("./model/GlobalTaxCommand"));
 
@@ -1064,8 +1058,6 @@ var _Metadata = _interopRequireDefault(require("./model/Metadata"));
 
 var _MetadataModel = _interopRequireDefault(require("./model/MetadataModel"));
 
-var _PageListDto = _interopRequireDefault(require("./model/PageListDto"));
-
 var _PageListModel = _interopRequireDefault(require("./model/PageListModel"));
 
 var _Payment = _interopRequireDefault(require("./model/Payment"));
@@ -1094,9 +1086,9 @@ var _ProductDeleteViewModel = _interopRequireDefault(require("./model/ProductDel
 
 var _ProductModel = _interopRequireDefault(require("./model/ProductModel"));
 
-var _ProductTaxesCommand = _interopRequireDefault(require("./model/ProductTaxesCommand"));
+var _ProductModelGetAllModel = _interopRequireDefault(require("./model/ProductModelGetAllModel"));
 
-var _ProductsViewModel = _interopRequireDefault(require("./model/ProductsViewModel"));
+var _ProductTaxesCommand = _interopRequireDefault(require("./model/ProductTaxesCommand"));
 
 var _PurchaseOrderCommand = _interopRequireDefault(require("./model/PurchaseOrderCommand"));
 
@@ -1164,7 +1156,7 @@ var _PriceApi = _interopRequireDefault(require("./api/PriceApi"));
 
 var _ProductApi = _interopRequireDefault(require("./api/ProductApi"));
 
-var _TaxesApi = _interopRequireDefault(require("./api/TaxesApi"));
+var _TaxApi = _interopRequireDefault(require("./api/TaxApi"));
 
 var _UserApi = _interopRequireDefault(require("./api/UserApi"));
 

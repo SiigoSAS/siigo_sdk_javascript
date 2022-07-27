@@ -13,15 +13,13 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateProductCommand = _interopRequireDefault(require("../model/CreateProductCommand"));
-
 var _CreateProductCountryCommand = _interopRequireDefault(require("../model/CreateProductCountryCommand"));
 
 var _ProductDeleteViewModel = _interopRequireDefault(require("../model/ProductDeleteViewModel"));
 
 var _ProductModel = _interopRequireDefault(require("../model/ProductModel"));
 
-var _ProductsViewModel = _interopRequireDefault(require("../model/ProductsViewModel"));
+var _ProductModelGetAllModel = _interopRequireDefault(require("../model/ProductModelGetAllModel"));
 
 var _UpdateProductCommand = _interopRequireDefault(require("../model/UpdateProductCommand"));
 
@@ -58,7 +56,7 @@ var ProductApi = /*#__PURE__*/function () {
   /**
    * Creates a product.
    * @param {Object} opts Optional parameters
-   * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+   * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
    */
 
@@ -81,7 +79,7 @@ var ProductApi = /*#__PURE__*/function () {
     /**
      * Creates a product.
      * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCommand} opts.createProductCommand Represents the request with the product information.
+     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand Represents the request with the product information.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
      */
 
@@ -223,7 +221,7 @@ var ProductApi = /*#__PURE__*/function () {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsViewModel} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModelGetAllModel} and HTTP response
      */
 
   }, {
@@ -253,7 +251,7 @@ var ProductApi = /*#__PURE__*/function () {
       var authNames = ['Bearer'];
       var contentTypes = [];
       var accepts = ['text/plain', 'application/json', 'text/json'];
-      var returnType = _ProductsViewModel["default"];
+      var returnType = _ProductModelGetAllModel["default"];
       return this.apiClient.callApi('/v1/products', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -273,7 +271,7 @@ var ProductApi = /*#__PURE__*/function () {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsViewModel}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModelGetAllModel}
      */
 
   }, {
