@@ -14,10 +14,9 @@
 
 import ApiClient from "../ApiClient";
 import CreateProductCommand from '../model/CreateProductCommand';
-import CreateProductCountryCommand from '../model/CreateProductCountryCommand';
 import ProductDeleteViewModel from '../model/ProductDeleteViewModel';
 import ProductModel from '../model/ProductModel';
-import ProductsViewModel from '../model/ProductsViewModel';
+import ProductModelGetAllModel from '../model/ProductModelGetAllModel';
 import UpdateProductCommand from '../model/UpdateProductCommand';
 
 /**
@@ -78,48 +77,6 @@ export default class ProductApi {
      */
     createProduct(opts) {
       return this.createProductWithHttpInfo(opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
-     */
-    createProductByCountryWithHttpInfo(opts) {
-      opts = opts || {};
-      let postBody = opts;
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['Bearer'];
-      let contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/*+json'];
-      let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductModel;
-      return this.apiClient.callApi(
-        '/v1/products/country-example', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
-     */
-    createProductByCountry(opts) {
-      return this.createProductByCountryWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -235,7 +192,7 @@ export default class ProductApi {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsViewModel} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModelGetAllModel} and HTTP response
      */
     getProductsWithHttpInfo(opts) {
       opts = opts || {};
@@ -267,7 +224,7 @@ export default class ProductApi {
       let authNames = ['Bearer'];
       let contentTypes = [];
       let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = ProductsViewModel;
+      let returnType = ProductModelGetAllModel;
       return this.apiClient.callApi(
         '/v1/products', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -292,7 +249,7 @@ export default class ProductApi {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsViewModel}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModelGetAllModel}
      */
     getProducts(opts) {
       return this.getProductsWithHttpInfo(opts)

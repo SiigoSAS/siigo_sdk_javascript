@@ -21,5 +21,6 @@ Name | Type | Description | Notes
 **reference** | **String** | Represents the Reference or factory code of the product or service. | [optional] 
 **description** | **String** | Represents product description. | [optional] 
 **additionalFields** | [**AdditionalFieldsProducts**](AdditionalFieldsProducts.md) |  | [optional] 
+**key** | **String** |  | [optional] 
 
 

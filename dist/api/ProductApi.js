@@ -15,13 +15,11 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _CreateProductCommand = _interopRequireDefault(require("../model/CreateProductCommand"));
 
-var _CreateProductCountryCommand = _interopRequireDefault(require("../model/CreateProductCountryCommand"));
-
 var _ProductDeleteViewModel = _interopRequireDefault(require("../model/ProductDeleteViewModel"));
 
 var _ProductModel = _interopRequireDefault(require("../model/ProductModel"));
 
-var _ProductsViewModel = _interopRequireDefault(require("../model/ProductsViewModel"));
+var _ProductModelGetAllModel = _interopRequireDefault(require("../model/ProductModelGetAllModel"));
 
 var _UpdateProductCommand = _interopRequireDefault(require("../model/UpdateProductCommand"));
 
@@ -89,40 +87,6 @@ var ProductApi = /*#__PURE__*/function () {
     key: "createProduct",
     value: function createProduct(opts) {
       return this.createProductWithHttpInfo(opts).then(function (response_and_data) {
-        return response_and_data.data;
-      });
-    }
-    /**
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModel} and HTTP response
-     */
-
-  }, {
-    key: "createProductByCountryWithHttpInfo",
-    value: function createProductByCountryWithHttpInfo(opts) {
-      opts = opts || {};
-      var postBody = opts;
-      var pathParams = {};
-      var queryParams = {};
-      var headerParams = {};
-      var formParams = {};
-      var authNames = ['Bearer'];
-      var contentTypes = ['application/json-patch+json', 'application/json', 'text/json', 'application/*+json'];
-      var accepts = ['text/plain', 'application/json', 'text/json'];
-      var returnType = _ProductModel["default"];
-      return this.apiClient.callApi('/v1/products/country-example', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
-    }
-    /**
-     * @param {Object} opts Optional parameters
-     * @param {module:model/CreateProductCountryCommand} opts.createProductCountryCommand 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModel}
-     */
-
-  }, {
-    key: "createProductByCountry",
-    value: function createProductByCountry(opts) {
-      return this.createProductByCountryWithHttpInfo(opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -223,7 +187,7 @@ var ProductApi = /*#__PURE__*/function () {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductsViewModel} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ProductModelGetAllModel} and HTTP response
      */
 
   }, {
@@ -253,7 +217,7 @@ var ProductApi = /*#__PURE__*/function () {
       var authNames = ['Bearer'];
       var contentTypes = [];
       var accepts = ['text/plain', 'application/json', 'text/json'];
-      var returnType = _ProductsViewModel["default"];
+      var returnType = _ProductModelGetAllModel["default"];
       return this.apiClient.callApi('/v1/products', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -273,7 +237,7 @@ var ProductApi = /*#__PURE__*/function () {
      * @param {Date} opts.updatedEnd Returns results where the \"last_updated\" field is less or equal than the entered date
      * @param {Number} opts.page Represents the current page
      * @param {Number} opts.pageSize Represents the number of results per page.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductsViewModel}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ProductModelGetAllModel}
      */
 
   }, {

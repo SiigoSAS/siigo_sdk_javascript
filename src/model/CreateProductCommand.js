@@ -101,6 +101,9 @@ class CreateProductCommand {
             if (data.hasOwnProperty('additional_fields')) {
                 obj['additional_fields'] = AdditionalFieldsProducts.constructFromObject(data['additional_fields']);
             }
+            if (data.hasOwnProperty('key')) {
+                obj['key'] = ApiClient.convertToType(data['key'], 'String');
+            }
         }
         return obj;
     }
@@ -208,6 +211,11 @@ CreateProductCommand.prototype['description'] = undefined;
  * @member {module:model/AdditionalFieldsProducts} additional_fields
  */
 CreateProductCommand.prototype['additional_fields'] = undefined;
+
+/**
+ * @member {String} key
+ */
+CreateProductCommand.prototype['key'] = undefined;
 
 
 
