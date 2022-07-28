@@ -29,5 +29,6 @@ Name | Type | Description | Notes
 **prefix** | **String** | Invoice prefix to which the credit or payent will be applied. For example, &#39;FV-1&#39;. | [optional] 
 **globalDiscounts** | [**[DocumentTypeTaxModel]**](DocumentTypeTaxModel.md) | Contains information about the global discounts associated to document type. | [optional] 
 **globalCharges** | [**[DocumentTypeTaxModel]**](DocumentTypeTaxModel.md) | Contains information about the global charges associated to document type. | [optional] 
+**iSR** | **Boolean** | Represent if the document allows ISR. This field is only for Mexico. | [optional] 
 
 

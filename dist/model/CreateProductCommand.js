@@ -137,6 +137,10 @@ var CreateProductCommand = /*#__PURE__*/function () {
         if (data.hasOwnProperty('additional_fields')) {
           obj['additional_fields'] = _AdditionalFieldsProducts["default"].constructFromObject(data['additional_fields']);
         }
+
+        if (data.hasOwnProperty('key')) {
+          obj['key'] = _ApiClient["default"].convertToType(data['key'], 'String');
+        }
       }
 
       return obj;
@@ -246,5 +250,10 @@ CreateProductCommand.prototype['description'] = undefined;
  */
 
 CreateProductCommand.prototype['additional_fields'] = undefined;
+/**
+ * @member {String} key
+ */
+
+CreateProductCommand.prototype['key'] = undefined;
 var _default = CreateProductCommand;
 exports["default"] = _default;
